@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./pharma.css">
+    <script src="https://kit.fontawesome.com/f01540e567.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #17a2b8;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul>input {
+            width: 25rem;
+            height: 40px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: none;
+            padding-left: 10px;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+        }
+        #main>button {
+            background-color: yellow;
+            color: black;
+            width: 90px;
+            height: 40px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+        a {
+            padding: 20px;
+            display: block;
+            text-decoration: none;
+            justify-content: space-around;
+            color: white;
+            font-weight: bold;
+        }
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 15px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            border: none;
+            height: 400px;
+        }
+
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        .card-body button {
+            align-self: flex-start;
+        }
+
+        .card-title {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            color: #343a40;
+            border-top: 1px solid #dee2e6;
+        }
+
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        footer .container .footer-col {
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+        }
+
+        footer h5 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+
+        footer p, footer a {
+            color: #6c757d;
+            text-decoration: none;
+        }
+
+        footer p a {
+            color: #007bff;
+        }
+
+        footer .footer-col input {
+            width: 100%;
+            height: 38px;
+            padding: 0 15px;
+            border-radius: 20px;
+            border: 1px solid #ced4da;
+            margin-top: 10px;
+        }
+
+        footer .footer-col button {
+            width: 100%;
+            height: 38px;
+            border: none;
+            border-radius: 20px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .carousel {
+            width: 80%; /* Adjust width as needed */
+            max-width: 1000px; /* Maximum width of the carousel */
+            margin: auto; /* Center the carousel */
+        }
+        .carousel-item img {
+            width: 100%; /* Ensure image takes full width of the carousel item */
+            height: 500px; /* Set height as needed */
+            object-fit: cover; /* Cover the container while maintaining aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">WELLNESS24PHARMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+      </nav>
+
+    <h1 class="text-center my-4"><i>WELCOME TO WELLNESS24PHARMA</i></h1>
+  
+
+    <main class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://c1.wallpaperflare.com/preview/839/207/808/pill-tablet-pharmacy-medicine.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://c0.wallpaperflare.com/preview/386/354/385/analysis-hospital-doctor-medical.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://c0.wallpaperflare.com/preview/360/533/202/health-medical-healthcare-health.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71zPBKtrdpL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top" alt="Paracetamol">
+                    <div class="card-body">
+                        <h5 class="card-title">Paracetamol</h5>
+                        <p class="card-text">Price: $149</p>
+                        <p>Rating: ⭐⭐⭐⭐⭐</p>
+                        <button type="button" class="btn btn-primary" id="add-to-cart" data-id="1" data-name="Paracetamol" data-price="100" data-details="Product details" data-image="path/to/image.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHYdfGha_Yo2aE3Epe4_M73tnZLM3XJzmUHg&s" class="card-img-top" alt="Hairbless">
+                    <div class="card-body">
+                        <h5 class="card-title">Hairbless</h5>
+                        <p class="card-text">Price: $180</p>
+                        <p>Rating: ⭐⭐⭐⭐</p>
+                        <button type="button" class="btn btn-primary" id="add-to-cart" data-id="1" data-name="Hairbless" data-price="100" data-details="Product details" data-image="path/to/image.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/510Uiz6vUsL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top" alt="Shelcal 500">
+                    <div class="card-body">
+                        <h5 class="card-title">Shelcal 500</h5>
+                        <p class="card-text">Price: $1149</p>
+                        <p>Rating: ⭐⭐⭐⭐⭐</p>
+                        <button type="button" class="btn btn-primary" id="add-to-cart" data-id="0" data-name="Shelcal 500" data-price="100" data-details="Product details" data-image="path/to/image.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Dynapar">
+                    <div class="card-body">
+                        <h5 class="card-title">Sildenafil Tablet Viagra@50mg</h5>
+                        <p class="card-text">Price: $449</p>
+                        <p>Rating: ⭐⭐⭐⭐⭐</p>
+                        <button type="button" class="btn btn-primary" id="add-to-cart" data-id="0" data-name="Viagra@50mg" data-price="200" data-details="used to treat erectile dysfunction (ED" data-image="">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-12">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled social-links">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                
+                    </form>
+                    <div class="contact-info mt-12">
+                        <h5>About US</h5>
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Sector 22, Near Gandhi Hospital, India 400077</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 8521365479</p>
+                        <p><i class="fa-solid fa-envelope"></i> pharma@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+       document.getElementById('add-to-cart').addEventListener('click', function() {
+    const id = this.getAttribute('data-id');
+    const name = this.getAttribute('data-name');
+    const price = parseFloat(this.getAttribute('data-price'));
+    const details = this.getAttribute('data-details');
+    const image = this.getAttribute('data-image');
+
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingItemIndex = cart.findIndex(item => item.id === id);
+
+    if (existingItemIndex > 1) {
+        cart[existingItemIndex].quantity += 1;
+    } else {
+        cart.push({
+            id: id,
+            name: name,
+            price: price,
+            details: details,
+            image: image,
+            quantity: 1
+        });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert('Item added to cart');
+    });
+
+        
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
